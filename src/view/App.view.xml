@@ -10,6 +10,44 @@
 	<App id="app">
 	<Page id="page">
 		<content> 
+
+			<Table>
+				<columns>
+					<TableColumn>
+						<Label text = "Platz "/>
+					</TableColumn>
+					<TableColumn>
+						<Label text = "Verein "/>
+					</TableColumn>
+					<TableColumn>
+						<Label text = "Spiele "/>
+					</TableColumn>
+					<TableColumn>
+						<Label text = "Differenz "/>
+					</TableColumn>
+					<TableColumn>
+						<Label text = "Punkte"/>
+					</TableColumn>
+				</columns>
+				<rows>
+					<TableRow>
+						<cells>
+							<TableCell>
+								<content>
+									<Label text = "BVB"/>
+								</content>
+							</TableCell>
+						</cells>
+					</TableRow>
+				</rows>
+			</Table>
+
+
+
+
+
+
+
 			<List
 				headerText="Verein"
 				items="{bundesligaPlacing>/}"> 
@@ -30,12 +68,13 @@
                             	formatter : '.formatter.points'
                             	}"
 								
-						icon ="C:\Users\DEKNEBNI\Documents\templateProjekt\src\model\bild.png"/>
+						/>
 								
 					</firstStatus>
 
 				</ObjectListItem>
 			</List>
+			
 		</content>
 	</Page>
 	</App>
