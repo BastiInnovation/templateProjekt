@@ -2,21 +2,42 @@
 	controllerName="ifm.bs.template.templateproject.controller.App"
 	displayBlock="true"
 	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns:grid="sap.ui.layout.cssgrid"
 	xmlns:mvc="sap.ui.core.mvc">
 
 	<App id="app">
-		<MessagePage
-			title="{i18n>app_title}"
-			text="{i18n>app_title}"
-			icon="sap-icon://accept"
-			id="page"
-			description="{i18n>app_description}">
-			<buttons>
-				<Button
-					text="{i18n>btn_text}"
-					press="sayHello" />
-			</buttons>
-		</MessagePage>
+	<Page id="page">
+		<content> 
+			<List
+				headerText="Verein"
+				items="{bundesligaPlacing>/}"> 
+					<items>
+				<StandardListItem
+				
+				
+
+				title="{bundesligaPlacing>teamName}"
+				/>
+					</items>
+				
+				<ObjectListItem
+					title = "{bundesligaPlacing>teamName}">
+					<firstStatus>
+						<ObjectStatus text="{
+                        	    path: 'bundesligaPlacing>points',
+                            	formatter : '.formatter.points'
+                            	}"
+								
+						icon ="C:\Users\DEKNEBNI\Documents\templateProjekt\src\model\bild.png"/>
+								
+					</firstStatus>
+
+				</ObjectListItem>
+			</List>
+		</content>
+	</Page>
 	</App>
 
 </mvc:View>

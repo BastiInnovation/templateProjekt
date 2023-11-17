@@ -22,4 +22,16 @@ export class ApiRequests{
             return result.json(); 
         }
     }
+
+
+    public async getTable(season: string, leagueShortcut: string){
+        const result = await fetch(this.apiUrl + `/getbltable/${leagueShortcut}/${season}`, {
+            method: 'GET'
+        })
+
+        if(result.ok){
+            return result.json(); 
+        }
+    }
+    
 }
