@@ -1,0 +1,14 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "templateproject",
+    "namespace": "ifm.bs.template",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.90.0",
+    "author": "Bastian Mankel",
+    "tstypes": "@sapui5/ts-types-esm",
+    "tstypesVersion": "1.90.0",
+    "appId": "ifm.bs.template.templateproject",
+    "appURI": "ifm/bs/template/templateproject",
+    "setupCompleted": true
+  }
+}
