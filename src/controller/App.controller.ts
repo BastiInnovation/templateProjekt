@@ -13,12 +13,14 @@ export default class AppController extends BaseController {
 	formatter = new Formatter;
 	public onInit() : void {
 		// apply content density mode to root view
-		/* this.getView().addStyleClass((this.getOwnerComponent() as AppComponent).getContentDensityClass());
-		console.log(this.getOwnerComponent().getModel('bundesligaPlacing')); */ 
+		this.getView().addStyleClass((this.getOwnerComponent()).getContentDensityClass());
+		console.log(this.getOwnerComponent().getModel('bundesligaPlacing'));
 	}
 		
 	
 	navToDetail(event: Event) {
+
+		//TODO: path = teamID
 		const id = "tes";
 		
 		this.getRouter().navTo("detail", { path : id })

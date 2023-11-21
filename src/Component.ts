@@ -24,6 +24,7 @@ export default class Component extends UIComponent {
 			console.log(data)
 		}
 		)
+		this.getRouter().initialize(); 
 	}
 
 	/**

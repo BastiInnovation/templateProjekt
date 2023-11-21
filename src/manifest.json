@@ -70,26 +70,23 @@
 			"routes": [
 				{
 				  "pattern": "",
-				  "name": "app",
-				  "target": "app"
+				  "name": "master",
+				  "target": "master"
 				},
 				{
 					"pattern":"detail/{path}",
 					"name":"detail",
-					"target":[
-						"app",
-						"detail"
-					]
+					"target": "detail"
 				}
 			],
 			"targets": {
 				"master": {
-					"id": "app",
-					"name": "App"
+					"viewName": "master",
+					"viewId": "Master"
 				},
 				"detail": {
-					"id": "detail",
-					"name": "Detail"
+					"viewName": "detail",
+					"viewId": "Detail"
 				}
 			}
 		}
