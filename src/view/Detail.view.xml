@@ -1,0 +1,12 @@
+<mvc:View
+	displayBlock="true"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	controllerName="ifm.bs.template.templateproject.controller.Detail">
+	<Page
+		id="detail"
+		title="tbd"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+	</Page>
+</mvc:View>

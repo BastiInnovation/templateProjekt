@@ -59,7 +59,39 @@
 		},
 
 		"routing": {
-			
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"path": "ifm.bs.template.templateproject.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			  },
+			"routes": [
+				{
+				  "pattern": "",
+				  "name": "app",
+				  "target": "app"
+				},
+				{
+					"pattern":"detail/{path}",
+					"name":"detail",
+					"target":[
+						"app",
+						"detail"
+					]
+				}
+			],
+			"targets": {
+				"master": {
+					"id": "app",
+					"name": "App"
+				},
+				"detail": {
+					"id": "detail",
+					"name": "Detail"
+				}
+			}
 		}
 	}
 }
