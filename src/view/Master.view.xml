@@ -8,7 +8,6 @@
     <Page title="1. Bundesliga">
 		<!-- <CustomListItem type="Active" press=".navToIncidenceDetail"> -->
 		<content> 
-		<Button text= "Test"  press= ".navToDetail"/>
 			<Table 
 				items="{bundesligaPlacing>/}">
 				

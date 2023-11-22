@@ -13,13 +13,18 @@ export class ApiRequests{
 
     }
 
-    public async getNextMatchesbyTeam(teamId: string, leagueId: string){
-        const result = await fetch(this.apiUrl + `/getnextmatchbyleagueteam/${leagueId}/${teamId}`, {
+    public async getNextMatchesbyTeam(teamId: string){
+        const next = await fetch(this.apiUrl + `/getnextmatchbyleagueteam/4608/${teamId}`, {
+            method: 'GET'
+        })
+        const last = await fetch(this.apiUrl + `/getlastmatchbyleagueteam/4608/${teamId}`, {
             method: 'GET'
         })
 
-        if(result.ok){
-            return result.json(); 
+        const result = [next, last] ;
+        console.log(result);
+        if(next.ok){
+            return result; 
         }
     }
 
@@ -34,6 +39,14 @@ export class ApiRequests{
         }
     }
 
-    
-    
+    public async getAllMatches(){
+        const matches = await fetch(this.apiUrl + '/getmatchdata/bl1/2023', {
+            method: 'GET'
+        })
+
+        if(matches.ok){
+           return matches.json();
+        }
+    }
+  
 }
