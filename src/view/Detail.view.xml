@@ -26,7 +26,7 @@
 			<ColumnListItem type="Active">
 
 			<cells>
-				<!-- <Text text = "{gruppe>groupName}"/> -->
+				<Text id="idMatchIDText" text = "{spiele>steffan}"/>
 			</cells>
 
 			</ColumnListItem>
