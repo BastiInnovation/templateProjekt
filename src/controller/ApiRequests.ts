@@ -49,4 +49,13 @@ export class ApiRequests{
         }
     }
   
+    public async getPlayedMatches(team1Id: number, team2Id: number){
+        const games = await fetch(this.apiUrl + `/getmatchdata/${team1Id}/${team2Id}`, {
+            method: 'GET'
+        })
+
+        if(games.ok){
+            return games.json();
+        }
+    }
 }

@@ -77,6 +77,11 @@
 					"pattern":"detail/{path}",
 					"name":"detail",
 					"target": "detail"
+				},
+				{
+					"pattern":"past/{path}",
+					"name":"past",
+					"target":"past"
 				}
 			],
 			"targets": {
@@ -87,8 +92,11 @@
 				"detail": {
 					"viewName": "detail",
 					"viewId": "Detail"
-				}
-			}
+				},
+				"past":{
+					"viewName": "past",
+					"viewId": "Past"
+				}			}
 		}
 	}
 }

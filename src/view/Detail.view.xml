@@ -19,14 +19,40 @@
 					<Text text= "Spieltag"/>
 				</Column>
 				<Column>
-					<Text text= ""/>
+					<Text text= "Gegen"/>
 				</Column>
+				<Column>
+					<Text text= "Ergebnis"/>
+				</Column>
+				<Column>
+					<Text text= "Wird gespielt am"/>
+				</Column>
+			
 			</columns>
 			<items>
-			<ColumnListItem type="Active">
+			<ColumnListItem type="Active" press= "navToPast">
 
 			<cells>
-				<Text id="idMatchIDText" text = "{spiele>steffan}"/>
+				<Text id="idGroupNameText" text = "{spiele>groupName}"/>
+			</cells>
+			<cells>
+				<Text id="idTeamNameText" text = "{parts: [
+							{path: 'spiele>team1Name'},
+							{path: 'spiele>team2Name'}],
+							formatter: '.formatter.versus'}"/>
+			</cells>
+			<cells>
+				<Text text = "{parts: [
+							{path: 'spiele>pointsTeam1'},
+							{path: 'spiele>pointsTeam2'},
+							{path: 'spiele>time'}],
+							formatter: '.formatter.result'}"/>
+			</cells>
+			<cells>
+				<Text text = "{spiele>date}"/>
+			</cells>
+			<cells>
+				<!-- <Text text = "{spiele>stadium}"/> -->
 			</cells>
 
 			</ColumnListItem>

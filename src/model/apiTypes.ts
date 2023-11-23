@@ -12,7 +12,7 @@ export type Match ={
     team2: Team; 
     lastUpdateDateTime: string;
     matchIsFinished: boolean;
-    matchResults: MatchResult;
+    matchResults: MatchResult[];
     goals: Goal[];
     location: Location;
     numberOfViewers: string; 

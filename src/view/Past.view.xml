@@ -1,0 +1,19 @@
+<mvc:View
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	controllerName="ifm.bs.template.templateproject.controller.Past">
+
+
+<Page	
+		id="past"
+		title="Vergangene Spiele"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+	
+		<Text text= "test"/>
+	
+</Page>
+</mvc:View>
